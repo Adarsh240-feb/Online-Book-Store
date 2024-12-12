@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            background-image: url(https://img.freepik.com/free-vector/3d-style-indian-currency-rupee-sign-white-background-design_1017-44530.jpg);
+            background-size: 10%;
+        }
+
+        .cart-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .cart-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cart-button button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .cart-button button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Structure Using C </td>
+                    <td>&#8377 611 </td>
+                    <td>1</td>
+                    <td>&#8377 611</td>
+                </tr>
+                <tr>
+                    <td>How To Talk To Anyone </td>
+                    <td>&#8377 169</td>
+                    <td>1</td>
+                    <td>&#8377 169</td>
+                </tr>
+                <tr>
+                    <td>Technical Communication </td>
+                    <td>&#8377 412</td>
+                    <td>1</td>
+                    <td>&#8377 412</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="total">Total</td>
+                    <td>&#8377 1192</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="cart-button">
+            <a href="#"><button>Click to Pay</a>
+           
+        </div>
+    </div>
+</body>
+
+</html>

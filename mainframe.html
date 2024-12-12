@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Book Store</title>
+    <!--Internal CSS-->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: "top top top" "left right right";
+            grid-template-rows: 110px auto;
+            grid-template-columns: 150px auto;
+            height: 100vh;
+        }
+
+        .top {
+            grid-area: top;
+            background-color: rgb(62, 4, 62);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 70px;
+        }
+
+        .left {
+            grid-area: left;
+            padding: 20px;
+            background-color: azure;
+        }
+
+        .right {
+            grid-area: right;
+            overflow: auto;
+        }
+
+        .top a,
+        .left {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .top a:hover {
+            text-decoration: underline;
+        }
+
+        .left a {
+            color: black;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .left a:hover {
+            color: red;
+        }
+
+        iframe {
+            width: 100%;
+            height: 90%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--top section-->
+        <div class="top">
+            <img src="logo.jpg" alt="BookStoreLogo" style="height: 60px; float: left;">
+            <!--inline css is used in img and h1 tag with the help of style attribute-->
+            <h1 style="font-size:24px; margin-left: 15px;">Online Book Store</h1>
+            <div style="margin-top: 10px;">
+                <a href="home.html" target="mainFrame">Home</a>
+                <a href="login.html" target="mainFrame">Login</a>
+                <a href="rindex.html" target="mainFrame">Register</a>
+                <a href="cindex.html" target="mainFrame">Catalogue</a>
+                <a href="cartindex.html" target="mainFrame">Cart</a>
+            </div>
+        </div>
+        <!--Left Section-->
+        <div class="left">
+            <h3>Departments</h3>
+            <a href="#">CSE</a>
+            <a href="#">ECE</a>
+            <a href="#">EEE</a>
+            <a href="#">CIVIL</a>
+            <a href="#">Other</a>
+        </div>
+
+        <!--right section-->
+        <div class="right">
+            <iframe name="mainFrame" id="mainFrame" src="home.html" src="login.html" src="rindex.html" src="cindex.html"
+                src="cartindex.html" width="100%" height="500"></iframe>
+
+            <!--iframe tag is used to embed/attach 
+            another web page to this one-->
+        </div>
+    </div>
+</body>
+
+</html>

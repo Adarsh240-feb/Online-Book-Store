@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f8;
+            color: #333;
+        }
+
+        .container {
+            width: 95%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .book {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .details h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #222;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .details .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+
+        .details button {
+            padding: 10px 15px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .details button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/416/416/kx6fwcw0/book/r/q/c/data-structures-using-c-original-imag9p8bjvxmgup4.jpeg?q=70&crop=false"
+                alt="Book Cover 1">
+            <div class="details">
+                <h3>Data Structures and Algorithm</h3>
+                <p><strong>Author:</strong>Reema Thareja </p>
+                <p><strong>Publisher:</strong> OXFORD</p>
+                <p class="price">&#8377;611/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/d/h/m/computer-system-architecture-revised-3-e-original-imah5uztfvh3ygrk.jpeg?q=70&crop=false"
+                alt="Book Cover 2">
+            <div class="details">
+                <h3>Computer System Architecture</h3>
+                <p><strong>Author:</strong>M.Morris Mano</p>
+                <p><strong>Publisher:</strong> PEARSON</p>
+                <p class="price">&#8377;671/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/416/416/jz30nm80/book/3/5/9/a-textbook-of-discrete-mathematics-original-imafj5jyagxergzg.jpeg?q=70&crop=false"
+                alt="Book Cover 3">
+            <div class="details">
+                <h3>Discrete Mathematics</h3>
+                <p><strong>Author:</strong> Swapan Kumar Sarkar</p>
+                <p><strong>Publisher:</strong> S.CHAND COMPANY </p>
+                <p class="price">&#8377;669/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/416/416/l45xea80/regionalbooks/d/6/l/used-like-new-technical-communication-3e-principles-and-practice-original-imagf4gnnvbvvg4n.jpeg?q=70&crop=false"
+                alt="Book Cover 4">
+            <div class="details">
+                <h3>Technical Communication</h3>
+                <p><strong>Author:</strong> Sangeeta Sharma</p>
+                <p><strong>Publisher:</strong> OXFORD</p>
+                <p class="price">&#8377;412/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/jpr86fk0/book/0/3/0/a-textbook-of-engineering-mathematics-ptu-jalandhar-sem-iii-iv-original-imafbwx7phszetj3.jpeg?q=70"
+                alt="Book Cover 5">
+            <div class="details">
+                <h3>Engineering Mathematics - IV</h3>
+                <p><strong>Author:</strong> N.P Bali </p>
+                <p><strong>Publisher:</strong> UNIVERSITY SCIENCE PRESS</p>
+                <p class="price">&#8377;369/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/d/t/t/how-to-talk-to-anyone-original-imah63ghaqkanyfv.jpeg?q=70"
+                alt="Book Cover 6">
+            <div class="details">
+                <h3>How To Talk To Anyone </h3>
+                <p><strong>Author:</strong> Leil Lowndes </p>
+                <p><strong>Publisher:</strong> HARPER ELEMENT </p>
+                <p class="price">&#8377;169/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/book/m/f/s/harry-potter-and-the-philosopher-s-stone-original-imah44sjzw9gfpyr.jpeg?q=70&crop=false"
+                alt="Book Cover 7">
+            <div class="details">
+                <h3>Harry Potter and The Philospher's Stone </h3>
+                <p><strong>Author:</strong> JK Rowling </p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;269/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src=https://rukminim2.flixcart.com/image/416/416/xif0q/regionalbooks/z/x/p/harry-potter-and-the-chamber-of-secrets-english-paperback-original-imagqd2gk94epdgu.jpeg?q=70&crop=falsecover-placeholder8.jpg"
+                alt="Book Cover 8">
+            <div class="details">
+                <h3>Harry Potter and the Chamber Of Secret's</h3>
+                <p><strong>Author:</strong> JK Rowling </p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;269/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/o/6/m/harry-potter-y-el-prisionero-de-azkaban-harry-potter-and-the-original-imagkd43trztch5g.jpeg?q=70"
+                alt="Book Cover 9">
+            <div class="details">
+                <h3>Harry Potter and the Prisoner of Azkaban </h3>
+                <p><strong>Author:</strong> JK Rowling</p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;269/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/v/z/6/harry-potter-and-the-goblet-of-fire-original-imah3bzau5uuznyb.jpeg?q=70"
+                alt="Book Cover 10">
+            <div class="details">
+                <h3>Harry Potter and The Goblet of Fire </h3>
+                <p><strong>Author:</strong> JK Rowling</p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;269/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/m/c/g/harry-potter-and-the-order-of-the-phoenix-original-imahffdydzyvbzu5.jpeg?q=70"
+                alt="Book Cover 11">
+            <div class="details">
+                <h3>Harry Potter and the Order of the Phoenix</h3>
+                <p><strong>Author:</strong> JK Rowling</p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;469/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/o/6/z/harry-potter-and-the-half-blood-prince-original-imagxu5f4avph3av.jpeg?q=70"
+                alt="Book Cover 12">
+            <div class="details">
+                <h3>
+                    Harry Potter and the Half-Blood Prince</h3>
+                <p><strong>Author:</strong> JK Rowling</p>
+                <p><strong>Publisher:</strong> BLOOMSBURY PUBLISHING PLC</p>
+                <p class="price">&#8377;569/-</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
